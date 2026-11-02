@@ -44,8 +44,9 @@ namespace Illia_Fadieiev_SD_TA_001_Assignment
                         //Check data parses to required data types
                         if (int.TryParse(car[3], out int mileage) && int.TryParse(car[4], out int price))
                         {
+                            Car currentCar = new Car(car[0], car[1], car[2], mileage, price);
                             //Add a new element to the list of Cars
-                            cars.Add(new Car(car[0], car[1], car[2], mileage, price));
+                            cars.Add(currentCar);
                         }
                         else
                         {
@@ -72,7 +73,7 @@ namespace Illia_Fadieiev_SD_TA_001_Assignment
                 }
                 else {
                     //If file doesn't exist, show an error explaining what went wrong
-                    Console.WriteLine("Error: File not found. Please place the CSV file with data to bin\\Debug\\net8.0 and try again"); 
+                    Console.WriteLine($"Error: File not found. Please place the CSV file with data to {AppContext.BaseDirectory} and try again"); 
                 }  
             }
             static int GetAverage(int total, int amount)

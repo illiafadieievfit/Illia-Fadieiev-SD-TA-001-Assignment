@@ -74,11 +74,11 @@ namespace Illia_Fadieiev_SD_TA_001_Assignment
                     string report = "Car Stock – Weekly Report";
                     report += "\nTotal Cars in Stock: " + cars.Count + " Cars";
                     report += "\nTotal Value of Cars in Stock: €" + sumPrice;
-                    report += "\nAverage Price of Cars: €" + sumPrice / cars.Count;
-                    report += "\nAverage Mileage of Cars: " + sumMil / cars.Count;
+                    report += "\nAverage Price of Cars: €" + GetAverage(sumPrice, cars.Count);
+                    report += "\nAverage Mileage of Cars: " + GetAverage(sumMil, cars.Count);
                     report += $"\nCheapest Car Available: {cars[minPriceIndex].Registration}, {cars[minPriceIndex].Make}, {cars[minPriceIndex].Model} €{cars[minPriceIndex].Price}";
                     
-                    //Write report to the file, Path combined inside the method WriteAllText
+                    //Write report to the file, the Path is combined inside the method WriteAllText
                     File.WriteAllText(Path.Combine(AppContext.BaseDirectory, AppContext.BaseDirectory, "report.txt"), report);
                     //Show success message and the report
                     Console.WriteLine("Report is done and written to report.txt\n" + report);
@@ -87,6 +87,10 @@ namespace Illia_Fadieiev_SD_TA_001_Assignment
                     //If file doesn't exist, show an error explaining what went wrong
                     Console.WriteLine("Error: File not found. Please place the CSV file with data to bin\\Debug\\net8.0 and try again"); 
                 }  
+            }
+            static int GetAverage(int total, int amount)
+            {
+                return total / amount;
             }
         }
     }

@@ -55,33 +55,20 @@ namespace Illia_Fadieiev_SD_TA_001_Assignment
                             return;
                         }
                     }
-
-                    //Define variables required to make a report
-                    int minPrice = cars[0].Price;
-                    int minPriceIndex = 0;
-                    int sumPrice = 0;
-                    int sumMil = 0;
-
-                    //Loop with necessary calculations
-                    for (int i = 0; i < cars.Count; i++)
-                    {
-                        if (cars[i].Price < minPrice) { minPrice = cars[i].Price; minPriceIndex = i; }
-                        sumPrice += cars[i].Price;
-                        sumMil += cars[i].Mileage;
-                    }
-                    
+                    //Call a method to make calculations and assign a result to calculations named tuple
+                    var calculcations = Calculations(cars);
                     //Report creation
                     string report = "Car Stock – Weekly Report";
                     report += "\nTotal Cars in Stock: " + cars.Count + " Cars";
-                    report += "\nTotal Value of Cars in Stock: €" + sumPrice;
-                    report += "\nAverage Price of Cars: €" + GetAverage(sumPrice, cars.Count);
-                    report += "\nAverage Mileage of Cars: " + GetAverage(sumMil, cars.Count);
-                    report += $"\nCheapest Car Available: {cars[minPriceIndex].Registration}, {cars[minPriceIndex].Make}, {cars[minPriceIndex].Model} €{cars[minPriceIndex].Price}";
+                    report += "\nTotal Value of Cars in Stock: €" + calculcations.sumPrice;
+                    report += "\nAverage Price of Cars: €" + GetAverage(calculcations.sumPrice, cars.Count);
+                    report += "\nAverage Mileage of Cars: " + GetAverage(calculcations.sumMil, cars.Count);
+                    report += $"\nCheapest Car Available: {cars[calculcations.minPriceIndex].Registration}, {cars[calculcations.minPriceIndex].Make}, {cars[calculcations.minPriceIndex].Model} €{cars[calculcations.minPriceIndex].Price}";
                     
                     //Write report to the file, the Path is combined inside the method WriteAllText
                     File.WriteAllText(Path.Combine(AppContext.BaseDirectory, AppContext.BaseDirectory, "report.txt"), report);
                     //Show success message and the report
-                    Console.WriteLine("Report is done and written to report.txt\n" + report);
+                    Console.WriteLine($"Report is done and written to ${AppContext.BaseDirectory}report.txt\n" + report);
                 }
                 else {
                     //If file doesn't exist, show an error explaining what went wrong
@@ -91,6 +78,28 @@ namespace Illia_Fadieiev_SD_TA_001_Assignment
             static int GetAverage(int total, int amount)
             {
                 return total / amount;
+            }
+            static (int sumPrice, int sumMil, int minPrice, int minPriceIndex) Calculations(List<Car> cars)
+            {
+                //Define variables required to make calculations
+                int minPrice = cars[0].Price;
+                int minPriceIndex = 0;
+                int sumPrice = 0;
+                int sumMil = 0;
+                //Loop with necessary calculations
+                for (int i = 0; i < cars.Count; i++)
+                {
+                    if (cars[i].Price < minPrice)
+                    {
+                        minPrice = cars[i].Price;
+                        minPriceIndex = i;
+                    }
+
+                    sumPrice += cars[i].Price;
+                    sumMil += cars[i].Mileage;
+                }
+                //Return values with field names as a named tuple
+                return (sumPrice, sumMil, minPrice, minPriceIndex);
             }
         }
     }

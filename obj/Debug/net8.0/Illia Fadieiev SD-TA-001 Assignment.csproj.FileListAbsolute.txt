@@ -1,0 +1,14 @@
+C:\Users\26.illia.fadieiev\source\repos\Illia Fadieiev SD-TA-001 Assignment\bin\Debug\net8.0\Illia Fadieiev SD-TA-001 Assignment.exe
+C:\Users\26.illia.fadieiev\source\repos\Illia Fadieiev SD-TA-001 Assignment\bin\Debug\net8.0\Illia Fadieiev SD-TA-001 Assignment.deps.json
+C:\Users\26.illia.fadieiev\source\repos\Illia Fadieiev SD-TA-001 Assignment\bin\Debug\net8.0\Illia Fadieiev SD-TA-001 Assignment.runtimeconfig.json
+C:\Users\26.illia.fadieiev\source\repos\Illia Fadieiev SD-TA-001 Assignment\bin\Debug\net8.0\Illia Fadieiev SD-TA-001 Assignment.dll
+C:\Users\26.illia.fadieiev\source\repos\Illia Fadieiev SD-TA-001 Assignment\bin\Debug\net8.0\Illia Fadieiev SD-TA-001 Assignment.pdb
+C:\Users\26.illia.fadieiev\source\repos\Illia Fadieiev SD-TA-001 Assignment\obj\Debug\net8.0\Illia Fadieiev SD-TA-001 Assignment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\26.illia.fadieiev\source\repos\Illia Fadieiev SD-TA-001 Assignment\obj\Debug\net8.0\Illia Fadieiev SD-TA-001 Assignment.AssemblyInfoInputs.cache
+C:\Users\26.illia.fadieiev\source\repos\Illia Fadieiev SD-TA-001 Assignment\obj\Debug\net8.0\Illia Fadieiev SD-TA-001 Assignment.AssemblyInfo.cs
+C:\Users\26.illia.fadieiev\source\repos\Illia Fadieiev SD-TA-001 Assignment\obj\Debug\net8.0\Illia Fadieiev SD-TA-001 Assignment.csproj.CoreCompileInputs.cache
+C:\Users\26.illia.fadieiev\source\repos\Illia Fadieiev SD-TA-001 Assignment\obj\Debug\net8.0\Illia Fadieiev SD-TA-001 Assignment.dll
+C:\Users\26.illia.fadieiev\source\repos\Illia Fadieiev SD-TA-001 Assignment\obj\Debug\net8.0\refint\Illia Fadieiev SD-TA-001 Assignment.dll
+C:\Users\26.illia.fadieiev\source\repos\Illia Fadieiev SD-TA-001 Assignment\obj\Debug\net8.0\Illia Fadieiev SD-TA-001 Assignment.pdb
+C:\Users\26.illia.fadieiev\source\repos\Illia Fadieiev SD-TA-001 Assignment\obj\Debug\net8.0\Illia Fadieiev SD-TA-001 Assignment.genruntimeconfig.cache
+C:\Users\26.illia.fadieiev\source\repos\Illia Fadieiev SD-TA-001 Assignment\obj\Debug\net8.0\ref\Illia Fadieiev SD-TA-001 Assignment.dll

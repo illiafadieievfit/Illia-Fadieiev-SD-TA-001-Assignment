@@ -1,6 +1,6 @@
 Car Stock – Weekly Report
 Total Cars in Stock: 25 Cars
-Total Value of Cars in Stock: €564300
-Average Price of Cars: €22572
+Total Value of Cars in Stock: €564301
+Average Price of Cars: €22572.04
 Average Mileage of Cars: 46072
 Cheapest Car Available: 161-K-23456, Peguot, 208 €9000

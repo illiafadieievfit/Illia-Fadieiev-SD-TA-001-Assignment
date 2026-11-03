@@ -37,7 +37,7 @@ namespace Illia_Fadieiev_SD_TA_001_Assignment
                     //Create a list of Car objects
                     List<Car> cars = new List<Car>();
                     
-                    //Parse all lines but first
+                    //Parse all lines except of the first
                     foreach (string line in fileLines.Skip(1))
                     {
                         string[] car = line.Split(',');
@@ -76,9 +76,9 @@ namespace Illia_Fadieiev_SD_TA_001_Assignment
                     Console.WriteLine($"Error: File not found. Please place the CSV file with data to {AppContext.BaseDirectory} and try again"); 
                 }  
             }
-            static int GetAverage(int total, int amount)
+            static double GetAverage(int total, int amount)
             {
-                return total / amount;
+                return (double)total / amount;
             }
             static (int sumPrice, int sumMil, int minPrice, int minPriceIndex) Calculations(List<Car> cars)
             {

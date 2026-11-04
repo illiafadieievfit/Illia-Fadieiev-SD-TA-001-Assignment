@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Illia Fadieiev SD-TA-001 Assignment")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0242eeadbb2c8cebc48dbec12dd85e9c7b5b71d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Illia Fadieiev SD-TA-001 Assignment")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Illia Fadieiev SD-TA-001 Assignment")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
